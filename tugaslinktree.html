@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Linktree iBox Garut - Clean Version</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <style>
+    :root {
+      --main-img: url('https://ugc.production.linktr.ee/cbca31ea-e058-467e-af66-8850a8c66da1_1000166701.jpeg');
+    }
+
+    body {
+      background-color: #000;
+      margin: 0;
+      color: white;
+      font-family: -apple-system, system-ui, sans-serif;
+    }
+
+    .main-section {
+      position: relative;
+      max-width: 480px; 
+      min-height: 95vh;
+      margin: 40px auto; 
+      border-radius: 35px; 
+      overflow: hidden; 
+      border: 1px solid #333;
+    }
+
+    .background-container {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-image: 
+        url('https://grainy-gradients.vercel.app/noise.svg'), 
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), 
+        var(--main-img); 
+      background-size: auto, cover, cover; 
+      background-position: center;
+      background-attachment: fixed; 
+      filter: blur(15px);
+      transform: scale(1.1); 
+      z-index: 1;
+    }
+
+    .content-inside {
+      position: relative;
+      z-index: 5;
+      padding: 20px;
+    }
+
+    .header-icon {
+      width: 40px; height: 40px;
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: white; border: none;
+    }
+
+    .profile-img {
+      width: 96px; height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .search-input {
+      background-color: white;
+      border-radius: 25px;
+      height: 55px; border: none;
+    }
+
+    .card-produk {
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden; border: none;
+      height: 100%;
+    }
+
+    .card-info {
+      background-color: #000;
+      color: white; text-align: left;
+      position: relative; padding: 10px;
+    }
+
+    .three-dots {
+      position: absolute; right: 10px; top: 10px;
+      color: #666; font-size: 14px;
+    }
+
+    .no-gutters { margin-right: 0; margin-left: 0; }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main-section shadow-lg text-center">
+      <div class="background-container"></div>
+      
+      <div class="content-inside">
+        <div class="d-flex justify-content-between px-2 pt-2 mb-4">
+          <button class="header-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </button>
+          <button class="header-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg>
+          </button>
+        </div>
+
+        <div class="mb-4">
+          <img src="https://ugc.production.linktr.ee/cbca31ea-e058-467e-af66-8850a8c66da1_1000166701.jpeg" class="profile-img mb-3">
+          <h5 class="font-weight-bold mb-1">@ibox.garut</h5>
+          <p class="text-white-50 small">Welcome Customers</p>
+        </div>
+
+        <div class="row no-gutters justify-content-center mb-4">
+          <div class="col-8 d-flex rounded-pill p-1" style="background-color: rgba(255,255,255,0.1);">
+            <button class="btn text-white rounded-pill flex-grow-1 shadow-none border-0 py-2">Links</button>
+            <button class="btn btn-light rounded-pill flex-grow-1 font-weight-bold py-2">Shop</button>
+          </div>
+        </div>
+
+        <div class="px-3 mb-4">
+          <input type="text" class="form-control search-input px-4" placeholder="Search products...">
+        </div>
+
+        <div class="row no-gutters px-2">
+          <div class="col-6 mb-3 px-2">
+            <div class="card card-produk shadow-sm">
+              <div class="d-flex justify-content-center align-items-center" style="height: 150px; background: #f8f8f8;">
+                <img src="https://ugc.production.linktr.ee/80303e22-7c69-4f4d-b5c8-29a81d2661a0_434326218-1081880636431123-3983518656487322298-n.jpeg?io=true&size=thumbnail-grid-carousel-v1_1" style="width: 65%; object-fit: contain;">
+              </div>
+              <div class="card-info">
+                <span class="three-dots">⋮</span>
+                <b class="d-block text-truncate" style="font-size: 11px;">iPhone 14 128 GB</b>
+                <small class="text-white-50" style="font-size: 10px;">IDR 12,249,000</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 mb-3 px-2">
+            <div class="card card-produk shadow-sm">
+              <div class="d-flex justify-content-center align-items-center" style="height: 150px; background: #f8f8f8;">
+                <img src="https://ugc.production.linktr.ee/3518d7ab-e285-44b8-9160-b2a49a45ebd0_434853984-924580659459473-6770026233189426557-n.jpeg?io=true&size=thumbnail-grid-carousel-v1_1" style="width: 65%; object-fit: contain;">
+              </div>
+              <div class="card-info">
+                <span class="three-dots">⋮</span>
+                <b class="d-block text-truncate" style="font-size: 11px;">iPhone 11 128 GB</b>
+                <small class="text-white-50" style="font-size: 10px;">IDR 7,749,000</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 mb-3 px-2">
+            <div class="card card-produk shadow-sm">
+              <div class="d-flex justify-content-center align-items-center" style="height: 150px; background: #f8f8f8;">
+                <img src="https://ugc.production.linktr.ee/edd0332d-2cb3-4ff2-a0f4-32417fd86586_434716798-2392770960918097-271720945335007698-n.jpeg?io=true&size=thumbnail-grid-carousel-v1_1" style="width: 65%; object-fit: contain;">
+              </div>
+              <div class="card-info">
+                <span class="three-dots">⋮</span>
+                <b class="d-block text-truncate" style="font-size: 11px;">iPhone 15 Pro 512 GB</b>
+                <small class="text-white-50" style="font-size: 10px;">IDR 25,999,000</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 mb-3 px-2">
+            <div class="card card-produk shadow-sm">
+              <div class="d-flex justify-content-center align-items-center" style="height: 150px; background: #f8f8f8;">
+                <img src="https://ugc.production.linktr.ee/0f4987da-dfe5-49ec-9313-e58cdc938daf_436751683-432933872662344-7607478103613411345-n.jpeg?io=true&size=thumbnail-grid-carousel-v1_1" style="width: 65%; object-fit: contain;">
+              </div>
+              <div class="card-info">
+                <span class="three-dots">⋮</span>
+                <b class="d-block text-truncate" style="font-size: 11px;">iPhone 15 PM 256 GB</b>
+                <small class="text-white-50" style="font-size: 10px;">IDR 22,999,000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5 py-3">
+          <p class="text-uppercase text-white-50 font-weight-bold" style="letter-spacing: 2px; font-size: 10px;">
+            Join ibox.garut on Linktree today
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
